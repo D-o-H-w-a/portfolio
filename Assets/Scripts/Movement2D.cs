@@ -31,6 +31,8 @@ public class Movement2D : MonoBehaviour
     bool isSpike;          // 내가 스파이크에 닿았을 여부.
     int jumpCount;                     // 연속 점프 가능 횟수.
 
+    MenuController menu;
+
     public bool IsGround => isGround;
 
     void Awake()
@@ -42,13 +44,18 @@ public class Movement2D : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         rigid = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>(); 
+        anim = GetComponent<Animator>();
+        menu = MenuController.Instance;
         
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (menu.startMenu.activeSelf)
+        {
+            return;
+        }
         GroundCheck();
         SpeedUp(isbuff);
     }
@@ -91,7 +98,7 @@ public class Movement2D : MonoBehaviour
     }
     public void Jump()
     {
-        if (jumpCount > 0)
+        if (jumpCount > 0 && rigid.velocity.y >= 0)
         {
             PlayerSound.Instance.PlaySound("Jump");
             jumpCount -= 1;
