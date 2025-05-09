@@ -23,7 +23,13 @@ public class Item : MonoBehaviour
             if (collision.gameObject.name == "Player")
             {
                 int randItem = Random.Range(0, 100);
-                if (randItem < 50)
+
+                if (randItem < 20)
+                {
+
+                }
+
+                else if (randItem < 50)
                 {
                     Movement2D.Instance.isbuff = true;
                     Movement2D.Instance.isSpeed = true;
