@@ -8,18 +8,18 @@ public class Movement2D : MonoBehaviour
 
     public static Movement2D Instance => instance;
     [Header("Ground")]
-    public Transform groundChecker;  // ¶¥ Ã¼Å© ±âÁØÁ¡.
-    public LayerMask groundMask;        // ±×¶ó¿îµå ¸¶½ºÅ©¸¸ Ã¼Å©.
-    public float groundRadius;                  // ¶¥ Ã¼Å© ¹ÝÁö¸§.
+    public Transform groundChecker;  // ï¿½ï¿½ Ã¼Å© ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+    public LayerMask groundMask;        // ï¿½×¶ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å©ï¿½ï¿½ Ã¼Å©.
+    public float groundRadius;                  // ï¿½ï¿½ Ã¼Å© ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 
     [Header("Move")]
     public float moveSpeed;
     public float jumpPower;
-    public float itemTime; // ¾ÆÀÌÅÛ È¿´É ½Ã°£.
-    public float itemSpeed; // ¾ÆÀÌÅÛ ¸Ô¾úÀ» ½Ã Ãß°¡ ½ºÇÇµå.
-    public float saveSpeed; // º»·¡ ½ºÇÇµå.
-    public bool isSpeed;           // ³»°¡ ¾ÆÀÌÅÛÀ» ¸Ô¾úÀ» ½Ã ¼Óµµ Áõ°¡.
-    public bool isbuff;             // ¹öÇÁ³Ä µð¹öÇÁ³Ä.
+    public float itemTime; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È¿ï¿½ï¿½ ï¿½Ã°ï¿½.
+    public float itemSpeed; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¾ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ß°ï¿½ ï¿½ï¿½ï¿½Çµï¿½.
+    public float saveSpeed; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Çµï¿½.
+    public bool isSpeed;           // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¾ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Óµï¿½ ï¿½ï¿½ï¿½ï¿½.
+    public bool isbuff;             // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 
     
 
@@ -27,9 +27,9 @@ public class Movement2D : MonoBehaviour
     Rigidbody2D rigid;
     Animator anim;
 
-    bool isGround;      // ³»°¡ ¶¥ À§¿¡ ¼­ ÀÖ´ÂÁö ¿©ºÎ.
-    bool isSpike;          // ³»°¡ ½ºÆÄÀÌÅ©¿¡ ´ê¾ÒÀ» ¿©ºÎ.
-    int jumpCount;                     // ¿¬¼Ó Á¡ÇÁ °¡´É È½¼ö.
+    bool isGround;      // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
+    bool isSpike;          // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å©ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
+    int jumpCount;                     // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È½ï¿½ï¿½.
 
     MenuController menu;
 

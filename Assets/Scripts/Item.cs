@@ -26,7 +26,7 @@ public class Item : MonoBehaviour
 
                 if (randItem < 20)
                 {
-
+                    
                 }
 
                 else if (randItem < 50)
