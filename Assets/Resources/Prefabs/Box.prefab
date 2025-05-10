@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2775750648462679983}
   - component: {fileID: -5334235005714081410}
   - component: {fileID: 3191073675556742807}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -122,9 +122,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.11, y: 0.35999998}
-      - {x: -0.13, y: 0.29999998}
-      - {x: -0.13, y: 0}
-      - {x: 0.13, y: 0}
-      - {x: 0.13, y: 0.32}
-      - {x: 0.089999996, y: 0.35999998}
+    - - {x: -0.09778713, y: 0.25357357}
+      - {x: -0.26285392, y: 0.25632936}
+      - {x: -0.27306503, y: 0.24940383}
+      - {x: -0.27306503, y: -0.24949148}
+      - {x: 0.27132028, y: -0.25647026}
+      - {x: 0.27306506, y: 0.24846748}
+      - {x: 0.103957556, y: 0.25182888}

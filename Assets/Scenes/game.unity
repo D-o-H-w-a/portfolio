@@ -3326,6 +3326,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1312620494, guid: cf10c5e6a6091304ea15e797aa95973b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312620494, guid: cf10c5e6a6091304ea15e797aa95973b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312620495, guid: cf10c5e6a6091304ea15e797aa95973b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312620495, guid: cf10c5e6a6091304ea15e797aa95973b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312620496, guid: cf10c5e6a6091304ea15e797aa95973b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749461531091250, guid: cf10c5e6a6091304ea15e797aa95973b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7604043890418546494, guid: cf10c5e6a6091304ea15e797aa95973b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -3373,6 +3397,14 @@ PrefabInstance:
     - target: {fileID: 7604043890418546498, guid: cf10c5e6a6091304ea15e797aa95973b, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7604043890418546498, guid: cf10c5e6a6091304ea15e797aa95973b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7604043890418546499, guid: cf10c5e6a6091304ea15e797aa95973b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf10c5e6a6091304ea15e797aa95973b, type: 3}

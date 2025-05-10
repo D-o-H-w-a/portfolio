@@ -16,19 +16,21 @@ public class Item : MonoBehaviour
         if (recycling <= 0.0f)
             Destroy(this.gameObject);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision != null)
+        if (collider != null)
         {
-            if (collision.gameObject.name == "Player")
+            if (collider.gameObject.name == "Player")
             {
                 int randItem = Random.Range(0, 100);
 
+                // 실드
                 if (randItem < 20)
                 {
-                    
+                    GameObject barrier = collider.gameObject.transform.Find("Barrier").gameObject;
+                    barrier.SetActive(true);
                 }
-
+                
                 else if (randItem < 50)
                 {
                     Movement2D.Instance.isbuff = true;

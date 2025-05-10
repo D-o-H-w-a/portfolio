@@ -10,8 +10,14 @@ public class Obstacle : MonoBehaviour
         {
             if (other.gameObject.name == "Ground" || other.gameObject.name == "Spike")
                 Destroy(this.gameObject);
+            
+            else if (other.gameObject.name.Equals("Barrier"))
+            {
+                other.gameObject.SetActive(false);
+                Destroy(this.gameObject);
+            }
 
-            else if (other.gameObject.name == "Player")
+            else if (other.gameObject.name.Equals("Player"))
             {
                 PlayerController player = other.gameObject.GetComponent<PlayerController>();
                 player.OnHurt();
