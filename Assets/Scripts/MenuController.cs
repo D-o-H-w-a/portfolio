@@ -28,8 +28,8 @@ public class MenuController : MonoBehaviour
         button.gameObject.SetActive(true);
         rewardBar.SetActive(true);
         gameMenu.SetActive(false);
-        reWard.text = "¹öÆ¾ ½Ã°¢: " + (int)UIManager.Instance.startTime + "ÃÊ";
-        reGame.text = "Àç½ÃÀÛ";
+        reWard.text = "ë²„í‹´ ì‹œê°: " + (int)UIManager.Instance.startTime + "ì´ˆ";
+        reGame.text = "ì¬ì‹œì‘";
     }
 
     public void Regame()

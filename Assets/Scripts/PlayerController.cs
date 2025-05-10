@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer spriteRenderer;
     Movement2D movement;
     Transform playerTs;
-    private bool isLeft;    // ¿ŞÂÊÀÎ°¡ ¿À¸¥ÂÊÀÎ°¡?
-    public int playerHp;   // ÇÃ·¹ÀÌ¾îÀÇ ¸ñ¼û.
+    private bool isLeft;    // ì™¼ìª½ì¸ê°€ ì˜¤ë¥¸ìª½ì¸ê°€?
+    public int playerHp;   // í”Œë ˆì´ì–´ì˜ ëª©ìˆ¨.
     // Start is called before the first frame updatepublic
     void Awake()
     {

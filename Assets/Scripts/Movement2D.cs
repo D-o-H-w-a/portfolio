@@ -8,18 +8,18 @@ public class Movement2D : MonoBehaviour
 
     public static Movement2D Instance => instance;
     [Header("Ground")]
-    public Transform groundChecker;  // �� üũ ������.
-    public LayerMask groundMask;        // �׶��� ����ũ�� üũ.
-    public float groundRadius;                  // �� üũ ������.
+    public Transform groundChecker;  // 땅 체크 기준점.
+    public LayerMask groundMask;        // 그라운드 마스크만 체크.
+    public float groundRadius;                  // 땅 체크 반지름.
 
     [Header("Move")]
     public float moveSpeed;
     public float jumpPower;
-    public float itemTime; // ������ ȿ�� �ð�.
-    public float itemSpeed; // ������ �Ծ��� �� �߰� ���ǵ�.
-    public float saveSpeed; // ���� ���ǵ�.
-    public bool isSpeed;           // ���� �������� �Ծ��� �� �ӵ� ����.
-    public bool isbuff;             // ������ �������.
+    public float itemTime; // 아이템 효능 시간.
+    public float itemSpeed; // 아이템 먹었을 시 추가 스피드.
+    public float saveSpeed; // 본래 스피드.
+    public bool isSpeed;           // 내가 아이템을 먹었을 시 속도 증가.
+    public bool isbuff;             // 버프냐 디버프냐.
 
     
 
@@ -27,9 +27,9 @@ public class Movement2D : MonoBehaviour
     Rigidbody2D rigid;
     Animator anim;
 
-    bool isGround;      // ���� �� ���� �� �ִ��� ����.
-    bool isSpike;          // ���� ������ũ�� ����� ����.
-    int jumpCount;                     // ���� ���� ���� Ƚ��.
+    bool isGround;      // 내가 땅 위에 서 있는지 여부.
+    bool isSpike;          // 내가 스파이크에 닿았을 여부.
+    int jumpCount;                     // 연속 점프 가능 횟수.
 
     MenuController menu;
 
